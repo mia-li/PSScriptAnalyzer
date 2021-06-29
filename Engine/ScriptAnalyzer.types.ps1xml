@@ -53,6 +53,12 @@
           $this.Suppression.Justification
         </GetScriptBlock>
       </ScriptProperty>
+	  <ScriptProperty>
+        <Name>Kind</Name>
+        <GetScriptBlock>
+          $this.Suppression.Kind
+        </GetScriptBlock>
+      </ScriptProperty>
       <MemberSet>
         <Name>PSStandardMembers</Name>
         <Members>
@@ -64,6 +70,7 @@
               <Name>Line</Name>
               <Name>Column</Name>
               <Name>Justification</Name>
+			  <Name>Kind</Name>
             </ReferencedProperties>
           </PropertySet>
         </Members>

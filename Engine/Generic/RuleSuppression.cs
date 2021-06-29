@@ -96,7 +96,14 @@ namespace Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic
             get;
             set;
         }
-
+        /// <summary>
+        /// Returns the kind of the suppression
+        /// </summary>
+        public string Kind
+        {
+            get;
+            set;
+        }
         private static HashSet<string> scopeSet;
 
         /// <summary>

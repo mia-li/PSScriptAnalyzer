@@ -1382,6 +1382,7 @@ namespace Microsoft.Windows.PowerShell.ScriptAnalyzer
                         || (!String.IsNullOrWhiteSpace(record.RuleSuppressionID) &&
                             string.Equals(ruleSuppression.RuleSuppressionID, record.RuleSuppressionID, StringComparison.OrdinalIgnoreCase)))
                     {
+                        ruleSuppression.Kind = "InSource";
                         suppressed[recordIndex] = true;
                         suppressedRecords.Add(new SuppressedRecord(record, ruleSuppression));
                         suppressionCount += 1;
